@@ -1,0 +1,29 @@
+body {
+    margin: 0px;
+}
+
+.container {
+    margin: 0px 290px;
+}
+
+.header {
+    background-image: url(bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-line {
+    padding-top: 72px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.header-line:hover {
+    color: blue;
+}
+
+.home-logo {
+    right: 290px;
+}
