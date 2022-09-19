@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 600px;
+  width: 600px;
+  margin: 2rem auto;
+  display: grid;
+  gap: 0.5rem;
+  grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+}
+
+.container > .block {
+  place-items: center;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  border-radius: 0.25rem;
+  background-color: indigo;
+}
+
+.container > .block.selected {
+  background-color: crimson;
+}
+
+.container > .block:hover {
+  background-color: cornflowerblue
+}
+
+.container > .block.selected:hover {
+  background-color: coral;
+}
+
+.form {
+  display: flex;
+  width: 600px;
+  margin: 2rem auto;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+.form > input, button {
+  height: 2rem;
+  padding: 0 .5rem;
+  outline: none;
+}
+
+.form > button {
+  margin-left: -1px;
+  cursor: pointer;
+  background-color: indigo;
+  color: #fff;
+}
